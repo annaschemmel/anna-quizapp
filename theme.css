@@ -12,7 +12,12 @@
   --topbar-background: lightgrey;
 
   /*____________Navigation_____________*/
-  --navbar-background: lightcyan;
+  --navbar-background: cyan;
+  /* --navbar-background-active: color-mix(
+    in oklab,
+    var(--navbar-background),
+    black 10% ); */
+  --navbar-background-active: blue;
 
   /*______________Cards______________*/
 

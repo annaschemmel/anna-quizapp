@@ -13,8 +13,15 @@
 
 .card__bookmark {
   position: absolute;
-  right: 15px;
+  right: 10px;
   top: -10px;
+}
+
+.card__bookmark svg path {
+  fill: #fff;
+}
+.card__bookmark.active svg path {
+  fill: #000;
 }
 
 .card__tag-container {

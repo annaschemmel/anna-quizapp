@@ -6,17 +6,27 @@ footer {
 }
 
 .navbar {
-  background-color: var(--navbar-background);
   display: flex;
   margin: 0;
   flex-grow: 1;
   padding: 0;
 }
 
-li.navlink {
+.navlink {
   list-style: none;
   flex-grow: 1;
   text-align: center;
-  background-color: lightcyan;
+  background-color: var(--navbar-background);
   padding: var(--space-sm);
+}
+.navlink svg path {
+  fill: #000;
+}
+
+.navlink.active {
+  background-color: var(--navbar-background-active);
+}
+
+.navlink.active svg path {
+  fill: #fff;
 }
