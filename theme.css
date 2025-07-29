@@ -5,17 +5,21 @@
   --space-md: 24px;
   --space-lg: 36px;
 
-  --body-background: #f9faff;
+  --border-radius-sm: 4px;
+  --border-radius-lg: 10px;
+
+  --body-background: #e2e9f9;
+
   --primary-color: #006ef2;
   --primary-lighter: color-mix(in oklab, var(--primary-color), white 70%);
-  --secondary-color: #ff3b00;
+  --secondary-color: #ff5c00;
   --tertiary-color: ;
   --dark: #202236;
   --light: #fff;
 
   /*_____________Topbar________________*/
 
-  --topbar-background: lightgrey;
+  --topbar-background: #fff;
 
   /*____________Navigation_____________*/
   --navbar-background: cyan;
@@ -27,5 +31,5 @@
 
   /*______________Cards______________*/
 
-  --card-background: #e5dff8;
+  --card-background: #fff;
 }
