@@ -23,10 +23,10 @@ footer {
   fill: #000;
 }
 
-.navlink.active {
+.navlink--active {
   background-color: var(--navbar-background-active);
 }
 
-.navlink.active svg path {
+.navlink--active svg path {
   fill: #fff;
 }

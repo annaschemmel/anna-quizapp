@@ -8,6 +8,7 @@ body {
   margin: 0;
   background-color: var(--body-background);
   font-family: "Poppins", sans-serif;
+  color: var(--dark);
 }
 
 main {
@@ -19,6 +20,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
+  line-height: 1.2;
 }
