@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  padding: var(--space-sm);
+  padding: 96px 24px 64px;
 }
 
 h1,

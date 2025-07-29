@@ -11,9 +11,9 @@
   --body-background: #e2e9f9;
 
   --primary-color: #006ef2;
-  --primary-lighter: color-mix(in oklab, var(--primary-color), white 70%);
+  --primary-lighter: color-mix(in oklab, var(--primary-color), white 65%);
   --secondary-color: #ff5c00;
-  --tertiary-color: ;
+  --tertiary-color: #eaeaea;
   --dark: #202236;
   --light: #fff;
 
@@ -22,12 +22,9 @@
   --topbar-background: #fff;
 
   /*____________Navigation_____________*/
-  --navbar-background: cyan;
-  /* --navbar-background-active: color-mix(
-    in oklab,
-    var(--navbar-background),
-    black 10% ); */
-  --navbar-background-active: blue;
+
+  --navbar-background: ;
+  --navbar-background-active: ;
 
   /*______________Cards______________*/
 

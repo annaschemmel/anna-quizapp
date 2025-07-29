@@ -3,6 +3,7 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: 500;
+  box-shadow: 3px -3px 8px 0px rgba(0, 0, 0, 0.05);
 }
 
 .navbar {
@@ -15,15 +16,15 @@ footer {
 .navlink {
   flex-grow: 1;
   text-align: center;
-  background-color: var(--navbar-background);
+  background-color: var(--primary-lighter);
   padding: var(--space-sm);
 }
 .navlink svg path {
-  fill: #000;
+  fill: var(--primary-color);
 }
 
 .navlink--active {
-  background-color: var(--navbar-background-active);
+  background-color: var(--primary-color);
 }
 
 .navlink--active svg path {
