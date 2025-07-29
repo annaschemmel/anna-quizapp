@@ -5,12 +5,15 @@
   --space-md: 24px;
   --spage-lg: 36px;
 
+  --body-background: lightyellow;
+
   /*_____________Topbar________________*/
 
   --topbar-background: lightgrey;
 
   /*____________Navigation_____________*/
-  --navbar-background: lightgreen;
+  --navbar-background: lightcyan;
+
   /*______________Cards______________*/
 
   --card-background: lightpink;

@@ -10,11 +10,13 @@ footer {
   display: flex;
   margin: 0;
   flex-grow: 1;
-  padding: var(--space-sm);
+  padding: 0;
 }
 
 li.navlink {
   list-style: none;
   flex-grow: 1;
   text-align: center;
+  background-color: lightcyan;
+  padding: var(--space-sm);
 }
