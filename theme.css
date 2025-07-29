@@ -1,1 +1,17 @@
+:root {
+  /*______________Main______________*/
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --spage-lg: 36px;
 
+  /*_____________Topbar________________*/
+
+  --topbar-background: lightgrey;
+
+  /*____________Navigation_____________*/
+  --navbar-background: lightgreen;
+  /*______________Cards______________*/
+
+  --card-background: lightpink;
+}

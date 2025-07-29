@@ -1,0 +1,18 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--topbar-background);
+  padding: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.topbar h1.logo {
+  font-size: 1.8rem;
+  margin: 0;
+}
