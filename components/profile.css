@@ -7,10 +7,6 @@
   margin-bottom: var(--space-lg);
 }
 
-.profile__information h2 {
-  /* font-family: "Syncopate", sans-serif; */
-}
-
 /* Picture */
 
 .profile__picture {
