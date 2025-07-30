@@ -28,7 +28,7 @@
 .card__bookmark svg path {
   fill: var(--primary-lighter);
 }
-.card__bookmark.active svg path {
+.card__bookmark.card__bookmark-active svg path {
   fill: var(--secondary-color);
 }
 
