@@ -21,6 +21,8 @@
   position: absolute;
   right: 10px;
   top: -12px;
+  border: none;
+  background-color: transparent;
 }
 
 .card__bookmark svg path {
