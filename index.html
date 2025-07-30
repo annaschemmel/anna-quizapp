@@ -24,8 +24,12 @@
     </header>
     <main>
       <!-- card 1 -->
-      <div class="card quiz">
-        <div class="card__bookmark active">
+      <div class="card quiz" aria-label="Quiz question">
+        <button
+          class="card__bookmark active"
+          aria-label="Bookmark"
+          aria-pressed="true"
+        >
           <svg
             width="36"
             height="36"
@@ -38,22 +42,28 @@
               fill="#000000"
             />
           </svg>
-        </div>
-        <h2 class="card__question">
+        </button>
+        <h2 class="card__question" aria-label="Question">
           What is the name of the first Marvel Cinematic Universe film, released
           in 2008?
         </h2>
-        <p class="card__answer card__answer--hidden">Iron Man</p>
+        <p class="card__answer card__answer--hidden" aria-label="Answer">
+          Iron Man
+        </p>
         <button class="card__button">Show answer</button>
-        <ul class="card__tag-container">
+        <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">MCU</li>
           <li class="card__tag">Films</li>
         </ul>
       </div>
       <!-- card 2 -->
-      <div class="card quiz">
-        <div class="card__bookmark">
+      <div class="card quiz" aria-label="Quiz question">
+        <button
+          class="card__bookmark"
+          aria-pressed="false"
+          aria-label="Bookmark"
+        >
           <svg
             width="36"
             height="36"
@@ -66,22 +76,26 @@
               fill="#000000"
             />
           </svg>
-        </div>
-        <h2 class="card__question">
+        </button>
+        <h2 class="card__question" aria-label="Question">
           What is the name of the powerful artifact that Thanos seeks to collect
           in the MCU?
         </h2>
-        <p class="card__answer">Infinity Stones</p>
+        <p class="card__answer" aria-label="Answer">Infinity Stones</p>
         <button class="card__button card__button--hide">Hide answer</button>
-        <ul class="card__tag-container">
+        <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">Thanos</li>
           <li class="card__tag">Artifacts</li>
         </ul>
       </div>
       <!-- card 3 -->
-      <div class="card quiz">
-        <div class="card__bookmark active">
+      <div class="card quiz" aria-label="Quiz question">
+        <button
+          class="card__bookmark active"
+          aria-pressed="true"
+          aria-label="Bookmark"
+        >
           <svg
             width="36"
             height="36"
@@ -94,21 +108,27 @@
               fill="#000000"
             />
           </svg>
-        </div>
-        <h2 class="card__question">
+        </button>
+        <h2 class="card__question" aria-label="Question">
           What is the real name of the superhero known as Iron Man?
         </h2>
-        <p class="card__answer card__answer--hidden">Tony Stark</p>
+        <p class="card__answer card__answer--hidden" aria-label="Answer">
+          Tony Stark
+        </p>
         <button class="card__button">Show answer</button>
-        <ul class="card__tag-container">
+        <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">Iron Man</li>
           <li class="card__tag">Characters</li>
         </ul>
       </div>
       <!-- card 4 -->
-      <div class="card quiz">
-        <div class="card__bookmark">
+      <div class="card quiz" aria-label="Quiz question">
+        <button
+          class="card__bookmark"
+          aria-pressed="false"
+          aria-label="Bookmark"
+        >
           <svg
             width="36"
             height="36"
@@ -121,24 +141,28 @@
               fill="#000000"
             />
           </svg>
-        </div>
-        <h2 class="card__question">
+        </button>
+        <h2 class="card__question" aria-label="Question">
           Which MCU film features the first appearance of the character Black
           Panther?
         </h2>
-        <p class="card__answer card__answer--hidden">
+        <p class="card__answer card__answer--hidden" aria-label="Answer">
           Captain America: Civil War
         </p>
         <button class="card__button">Show answer</button>
-        <ul class="card__tag-container">
+        <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">Black Panther</li>
           <li class="card__tag">Films</li>
         </ul>
       </div>
       <!-- card 5 -->
-      <div class="card quiz">
-        <div class="card__bookmark">
+      <div class="card quiz" aria-label="Quiz question">
+        <button
+          class="card__bookmark"
+          aria-pressed="false"
+          aria-label="Bookmark"
+        >
           <svg
             width="36"
             height="36"
@@ -151,13 +175,13 @@
               fill="#000000"
             />
           </svg>
-        </div>
-        <h2 class="card__question">
+        </button>
+        <h2 class="card__question" aria-label="Question">
           What is the name of Thor's enchanted hammer?
         </h2>
-        <p class="card__answer">Mjolnir</p>
+        <p class="card__answer" aria-label="Answer">Mjolnir</p>
         <button class="card__button card__button--hide">Hide answer</button>
-        <ul class="card__tag-container">
+        <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">Thor</li>
           <li class="card__tag">Weapons</li>
@@ -170,7 +194,7 @@
     <nav class="navbar">
       <!-- home -->
 
-      <a href="./index.html" class="navlink navlink--active">
+      <a href="./index.html" class="navlink navlink--active" role="link">
         <svg
           width="24"
           height="24"
@@ -187,7 +211,7 @@
 
       <!-- bookmarks -->
 
-      <a href="./bookmarks.html" class="navlink">
+      <a href="./bookmarks.html" class="navlink" role="link">
         <svg
           width="24"
           height="24"
@@ -204,7 +228,7 @@
 
       <!-- profile -->
 
-      <a href="./profile.html" class="navlink">
+      <a href="./profile.html" class="navlink" role="link">
         <svg
           height="22"
           width="22"

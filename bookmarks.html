@@ -24,8 +24,8 @@
     </header>
     <main>
       <!-- card 1 -->
-      <div class="card quiz">
-        <div class="card__bookmark active">
+      <div class="card quiz" aria-label="Quiz question">
+        <button class="card__bookmark active" aria-pressed="true">
           <svg
             width="36"
             height="36"
@@ -38,14 +38,16 @@
               fill="#000000"
             />
           </svg>
-        </div>
-        <h2 class="card__question">
+        </button>
+        <h2 class="card__question" aria-label="Question">
           What is the name of the first Marvel Cinematic Universe film, released
           in 2008?
         </h2>
-        <p class="card__answer card__answer--hidden">Iron Man</p>
+        <p class="card__answer card__answer--hidden" aria-label="Answer">
+          Iron Man
+        </p>
         <button class="card__button">Show answer</button>
-        <ul class="card__tag-container">
+        <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">MCU</li>
           <li class="card__tag">Films</li>
@@ -53,8 +55,8 @@
       </div>
 
       <!-- card 3 -->
-      <div class="card quiz">
-        <div class="card__bookmark active">
+      <div class="card quiz" aria-label="Quiz question">
+        <button class="card__bookmark active" aria-pressed="true">
           <svg
             width="36"
             height="36"
@@ -67,13 +69,15 @@
               fill="#000000"
             />
           </svg>
-        </div>
-        <h2 class="card__question">
+        </button>
+        <h2 class="card__question" aria-label="Question">
           What is the real name of the superhero known as Iron Man?
         </h2>
-        <p class="card__answer card__answer--hidden">Tony Stark</p>
+        <p class="card__answer card__answer--hidden" aria-label="Answer">
+          Tony Stark
+        </p>
         <button class="card__button">Show answer</button>
-        <ul class="card__tag-container">
+        <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">Iron Man</li>
           <li class="card__tag">Characters</li>
@@ -86,7 +90,7 @@
     <nav class="navbar">
       <!-- home -->
 
-      <a href="./index.html" class="navlink">
+      <a href="./index.html" class="navlink" role="link">
         <svg
           width="24"
           height="24"
@@ -103,7 +107,7 @@
 
       <!-- bookmarks -->
 
-      <a href="./bookmarks.html" class="navlink navlink--active">
+      <a href="./bookmarks.html" class="navlink navlink--active" role="link">
         <svg
           width="24"
           height="24"
@@ -120,7 +124,7 @@
 
       <!-- profile -->
 
-      <a href="./profile.html" class="navlink">
+      <a href="./profile.html" class="navlink" role="link">
         <svg
           height="22"
           width="22"
