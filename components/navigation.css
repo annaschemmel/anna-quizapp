@@ -19,11 +19,16 @@ footer {
   background-color: var(--primary-lighter);
   padding: var(--space-sm);
 }
+.dark .navlink {
+  background-color: var(--primary-darker);
+}
+
 .navlink svg path {
   fill: var(--primary-color);
 }
 
-.navlink--active {
+.navlink--active,
+.dark .navlink--active {
   background-color: var(--primary-color);
 }
 

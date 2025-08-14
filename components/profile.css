@@ -66,6 +66,9 @@
   padding: var(--space-sm) 0;
   align-items: center;
 }
+.dark .settings__item {
+  border-color: var(--dark);
+}
 
 /* _______________________Toggle_______________________ */
 

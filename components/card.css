@@ -1,6 +1,6 @@
 .card {
   padding: var(--space-md);
-  background-color: var(--card-background);
+  background-color: var(--light);
   display: flex;
   gap: var(--space-lg);
   flex-direction: column;
@@ -8,6 +8,9 @@
   margin-bottom: var(--space-md);
   border-radius: var(--border-radius-lg);
   box-shadow: 6px 2px 8px 0px rgba(0, 0, 0, 0.05);
+}
+.dark .card {
+  background-color: var(--dark);
 }
 
 .card.card__quiz {
