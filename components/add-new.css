@@ -25,6 +25,12 @@
   padding: var(--space-xs);
   border-radius: var(--border-radius-sm);
   width: 100%;
+  resize: none;
+}
+
+.add-new__form input:focus-visible,
+.add-new__form textarea:focus-visible {
+  outline: 2px solid #fff;
 }
 
 .add-new__form button {

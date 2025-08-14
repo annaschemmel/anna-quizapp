@@ -8,8 +8,29 @@ import { toggleBookmark } from "./helpers.js";
 
 const form = document.querySelector('[data-js="addnew-form"]');
 const cardContainer = document.querySelector('[data-js="card-container"]');
+const inputQ = document.querySelector('[data-js="inputQuestion"]');
+const charCountQ = document.querySelector('[data-js="counterQuestion"]');
+const inputA = document.querySelector('[data-js="inputAnswer"]');
+const charCountA = document.querySelector('[data-js="counterAnswer"]');
 
 //-----------------max input counter-----------------------
+
+// console.log(inputQ);
+
+let countQ = 200;
+let countA = 200;
+
+inputQ.addEventListener("input", updateCountQ);
+inputA.addEventListener("input", updateCountA);
+
+function updateCountQ() {
+  countQ = 200 - inputQ.value.length;
+  charCountQ.textContent = `${countQ} characters left`;
+}
+function updateCountA() {
+  countA = 200 - inputA.value.length;
+  charCountA.textContent = `${countA} characters left`;
+}
 
 //-----------------submit event-----------------------
 form.addEventListener("submit", handleSubmit);
