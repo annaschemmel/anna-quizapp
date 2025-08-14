@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./theme.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <script src="./JS/addnew.js" type="module"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,46 +24,47 @@
 
     <!-- ------------------Main------------------ -->
     <main>
-      <section class="card card--primary">
-        <form class="add-new__form" action="">
-          <label for="question">Your Question:</label>
-          <textarea
-            name="addnewQuestion"
-            class="addnew__text-input"
-            type="textarea"
-            id="addnewQuestion"
-            required
-            cols="40"
-            rows="4"
-            maxlength="200"
-          ></textarea>
+      <form class="add-new__form" data-js="addnew-form" action="">
+        <label for="question">Your Question:</label>
+        <textarea
+          name="addNewQuestion"
+          class="addnew__text-input"
+          type="textarea"
+          id="addNewQuestion"
+          required
+          cols="40"
+          rows="4"
+          maxlength="200"
+        ></textarea>
+        <p class="input__count" data-js="counterQuestion">dd</p>
 
-          <label for="answer">Your Anwer:</label>
-          <textarea
-            name="addnewAnswer"
-            class="addnew__text-input"
-            type="text"
-            id="addnewAnswer"
-            required
-            cols="40"
-            rows="4"
-            maxlength="200"
-          ></textarea>
+        <label for="answer">Your Anwer:</label>
+        <textarea
+          name="addNewAnswer"
+          class="addnew__text-input"
+          type="text"
+          id="addNewAnswer"
+          required
+          cols="40"
+          rows="4"
+          maxlength="200"
+        ></textarea>
+        <p class="input__count" data-js="counterQuestion">gg</p>
 
-          <label for="tag">Add a Tag:</label>
-          <input
-            name="addnewTag"
-            class="addnew__text-input"
-            type="text"
-            id="addnewTag"
-            required
-            maxlength="25"
-          />
-          <button class="card__button card__button--light" type="submit">
-            Add Question
-          </button>
-        </form>
-      </section>
+        <label for="tag">Add a Tag:</label>
+        <input
+          name="addNewTag"
+          class="addnew__text-input"
+          type="text"
+          id="addNewTag"
+          required
+          maxlength="25"
+        />
+        <button class="card__button card__button--light" type="submit">
+          Add Question
+        </button>
+      </form>
+      <section data-js="card-container"></section>
     </main>
 
     <!-- ------------------Footer------------------ -->

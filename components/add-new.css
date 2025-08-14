@@ -1,6 +1,19 @@
 .add-new__form {
   display: flex;
   flex-direction: column;
+  background-color: var(--primary-color);
+  padding: var(--space-md);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 6px 2px 8px 0px rgba(0, 0, 0, 0.05);
+  color: var(--light);
+  margin-bottom: var(--space-lg);
+}
+
+.add-new__form .input__count {
+  /* margin: 5px 0 var(--space-sm); */
+  font-size: 12px;
+  align-self: flex-end;
+  margin: 5px 0 var(--space-xs);
 }
 
 .add-new__form input,
@@ -11,10 +24,9 @@
   border: none;
   padding: var(--space-xs);
   border-radius: var(--border-radius-sm);
-  margin-bottom: var(--space-sm);
   width: 100%;
 }
 
 .add-new__form button {
-  margin: auto;
+  margin: var(--space-md) auto 0;
 }
