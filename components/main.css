@@ -13,6 +13,7 @@ body {
 
 main {
   padding: 96px 24px 64px;
+  transition-duration: 1s;
 }
 
 h1,
