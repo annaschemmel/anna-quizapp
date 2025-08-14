@@ -1,6 +1,7 @@
 console.clear();
 //---------imports------------
 import { toggleBookmark } from "./helpers.js";
+import { toggleAnswer } from "./helpers.js";
 //----------------------------
 
 //-----------------Bookmark Toggle-----------------------
@@ -30,15 +31,22 @@ bookmark.addEventListener("click", () => toggleBookmark(bookmark));
 
 const answerButton = document.querySelector('[data-ja="answerButton"]');
 const quizAnswer = document.querySelector('[data-js="quizAnswer"]');
-answerButton.addEventListener("click", toggleAnswer);
 
-function toggleAnswer() {
-  quizAnswer.toggleAttribute("hidden");
-  answerButton.classList.toggle("card__button--ghost");
+console.log(answerButton);
 
-  if (quizAnswer.hasAttribute("hidden")) {
-    answerButton.textContent = "Show answer";
-  } else {
-    answerButton.textContent = "Hide answer";
-  }
-}
+answerButton.addEventListener("click", () =>
+  toggleAnswer(answerButton, quizAnswer)
+);
+
+// answerButton.addEventListener("click", toggleAnswer);
+
+// function toggleAnswer() {
+//   quizAnswer.toggleAttribute("hidden");
+//   answerButton.classList.toggle("card__button--ghost");
+
+//   if (quizAnswer.hasAttribute("hidden")) {
+//     answerButton.textContent = "Show answer";
+//   } else {
+//     answerButton.textContent = "Hide answer";
+//   }
+// }

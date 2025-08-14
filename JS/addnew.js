@@ -2,6 +2,7 @@ console.clear();
 
 //---------imports------------
 import { toggleBookmark } from "./helpers.js";
+import { toggleAnswer } from "./helpers.js";
 //-----------------------------
 
 //-----------------declare variables-----------------------
@@ -13,29 +14,25 @@ const charCountQ = document.querySelector('[data-js="counterQuestion"]');
 const inputA = document.querySelector('[data-js="inputAnswer"]');
 const charCountA = document.querySelector('[data-js="counterAnswer"]');
 
-//-----------------max input counter-----------------------
+//-----------------max char input counter-----------------------
 
-// console.log(inputQ);
+const MAX_COUNT = 200;
+charCountQ.textContent = `${MAX_COUNT} characters left`;
+charCountA.textContent = `${MAX_COUNT} characters left`;
+inputQ.setAttribute("maxlength", `${MAX_COUNT}`);
+inputA.setAttribute("maxlength", `${MAX_COUNT}`);
 
-let countQ = 200;
-let countA = 200;
+inputQ.addEventListener("input", () => updateCount(inputQ, charCountQ));
+inputA.addEventListener("input", () => updateCount(inputA, charCountA));
 
-inputQ.addEventListener("input", updateCountQ);
-inputA.addEventListener("input", updateCountA);
-
-function updateCountQ() {
-  countQ = 200 - inputQ.value.length;
-  charCountQ.textContent = `${countQ} characters left`;
-}
-function updateCountA() {
-  countA = 200 - inputA.value.length;
-  charCountA.textContent = `${countA} characters left`;
+function updateCount(input, output) {
+  let count = MAX_COUNT - input.value.length;
+  output.textContent = `${count} characters left`;
 }
 
 //-----------------submit event-----------------------
-form.addEventListener("submit", handleSubmit);
 
-//console.log(document);
+form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -49,6 +46,8 @@ function handleSubmit(event) {
 
   createNewCard();
   event.target.reset();
+  charCountQ.textContent = `${MAX_COUNT} characters left`;
+  charCountA.textContent = `${MAX_COUNT} characters left`;
 }
 
 //-----------------create new cards-----------------------
@@ -91,9 +90,13 @@ function createNewCard() {
   answer.hidden = true;
   answer.textContent = `${addNewAnswer.value}`;
 
-  const button = document.createElement("button");
-  button.classList.add("card__button");
-  button.textContent = "Show answer";
+  const answerButton = document.createElement("button");
+  answerButton.classList.add("card__button");
+  answerButton.textContent = "Show answer";
+  console.log(answerButton);
+  answerButton.addEventListener("click", () =>
+    toggleAnswer(answerButton, answer)
+  );
 
   const tagContainer = document.createElement("ul");
   tagContainer.classList.add("card__tag-container");
@@ -104,6 +107,6 @@ function createNewCard() {
   tag.textContent = `${addNewTag.value}`;
 
   tagContainer.append(tag);
-  card.append(bookmark, question, answer, button, tagContainer);
+  card.append(bookmark, question, answer, answerButton, tagContainer);
   cardContainer.append(card);
 }
