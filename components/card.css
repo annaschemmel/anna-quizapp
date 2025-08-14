@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.card.card--primary {
+  background-color: var(--primary-color);
+  color: var(--light);
+}
+
 /* _______________________Bookmark_______________________ */
 
 .card__bookmark {
@@ -64,7 +69,12 @@
   font-size: 16px;
 }
 
-.card__button--hide {
+.card__button--ghost {
+  background-color: var(--light);
+  color: var(--primary-color);
+}
+
+.card__button--light {
   background-color: var(--light);
   color: var(--primary-color);
 }

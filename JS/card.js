@@ -18,7 +18,7 @@ answerButton.addEventListener("click", toggleAnswer);
 
 function toggleAnswer() {
   quizAnswer.toggleAttribute("hidden");
-  answerButton.classList.toggle("card__button--hide");
+  answerButton.classList.toggle("card__button--ghost");
 
   if (quizAnswer.hasAttribute("hidden")) {
     answerButton.textContent = "Show answer";
