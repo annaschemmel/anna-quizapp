@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizapp</title>
+    <title>Bookmarks – Quizapp</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./theme.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
-    <script src="./JS/card.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,10 +25,9 @@
       <!-- card 1 -->
       <section class="card card__quiz" aria-label="Quiz question">
         <button
-          class="card__bookmark"
-          aria-label="Bookmark"
+          class="card__bookmark card__bookmark-active"
           aria-pressed="true"
-          data-js="bookmark"
+          aria-label="Bookmark"
         >
           <svg
             width="36"
@@ -48,47 +46,14 @@
           What is the name of the first Marvel Cinematic Universe film, released
           in 2008?
         </h2>
-        <p class="card__answer" aria-label="Answer" hidden data-js="quizAnswer">
+        <p class="card__answer card__answer--hidden" hidden aria-label="Answer">
           Iron Man
         </p>
-        <button class="card__button" data-ja="answerButton">Show answer</button>
+        <button class="card__button">Show answer</button>
         <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">MCU</li>
           <li class="card__tag">Films</li>
-        </ul>
-      </section>
-
-      <!-- card 2 -->
-      <section class="card card__quiz" aria-label="Quiz question">
-        <button
-          class="card__bookmark"
-          aria-pressed="false"
-          aria-label="Bookmark"
-        >
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 6c0-1.4 0-2.1.272-2.635a2.5 2.5 0 0 1 1.093-1.093C6.9 2 7.6 2 9 2h6c1.4 0 2.1 0 2.635.272a2.5 2.5 0 0 1 1.092 1.093C19 3.9 19 4.6 19 6v13.208c0 1.056 0 1.583-.217 1.856a1 1 0 0 1-.778.378c-.349.002-.764-.324-1.593-.976L12 17l-4.411 3.466c-.83.652-1.245.978-1.594.976a1 1 0 0 1-.778-.378C5 20.791 5 20.264 5 19.208V6z"
-              fill="#000000"
-            />
-          </svg>
-        </button>
-        <h2 class="card__question" aria-label="Question">
-          What is the name of the powerful artifact that Thanos seeks to collect
-          in the MCU?
-        </h2>
-        <p class="card__answer" aria-label="Answer">Infinity Stones</p>
-        <button class="card__button card__button--hide">Hide answer</button>
-        <ul class="card__tag-container" aria-label="Topics">
-          <li class="card__tag">Marvel</li>
-          <li class="card__tag">Thanos</li>
-          <li class="card__tag">Artifacts</li>
         </ul>
       </section>
 
@@ -115,7 +80,9 @@
         <h2 class="card__question" aria-label="Question">
           What is the real name of the superhero known as Iron Man?
         </h2>
-        <p class="card__answer" hidden aria-label="Answer">Tony Stark</p>
+        <p class="card__answer card__answer--hidden" hidden aria-label="Answer">
+          Tony Stark
+        </p>
         <button class="card__button">Show answer</button>
         <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
@@ -123,86 +90,12 @@
           <li class="card__tag">Characters</li>
         </ul>
       </section>
-
-      <!-- card 4 -->
-      <section class="card card__quiz" aria-label="Quiz question">
-        <button
-          class="card__bookmark"
-          aria-pressed="false"
-          aria-label="Bookmark"
-        >
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 6c0-1.4 0-2.1.272-2.635a2.5 2.5 0 0 1 1.093-1.093C6.9 2 7.6 2 9 2h6c1.4 0 2.1 0 2.635.272a2.5 2.5 0 0 1 1.092 1.093C19 3.9 19 4.6 19 6v13.208c0 1.056 0 1.583-.217 1.856a1 1 0 0 1-.778.378c-.349.002-.764-.324-1.593-.976L12 17l-4.411 3.466c-.83.652-1.245.978-1.594.976a1 1 0 0 1-.778-.378C5 20.791 5 20.264 5 19.208V6z"
-              fill="#000000"
-            />
-          </svg>
-        </button>
-        <h2 class="card__question" aria-label="Question">
-          Which MCU film features the first appearance of the character Black
-          Panther?
-        </h2>
-        <p class="card__answer" hidden aria-label="Answer">
-          Captain America: Civil War
-        </p>
-        <button class="card__button">Show answer</button>
-        <ul class="card__tag-container" aria-label="Topics">
-          <li class="card__tag">Marvel</li>
-          <li class="card__tag">Black Panther</li>
-          <li class="card__tag">Films</li>
-        </ul>
-      </section>
-
-      <!-- card 5 -->
-      <section class="card card__quiz" aria-label="Quiz question">
-        <button
-          class="card__bookmark"
-          aria-pressed="false"
-          aria-label="Bookmark"
-        >
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 6c0-1.4 0-2.1.272-2.635a2.5 2.5 0 0 1 1.093-1.093C6.9 2 7.6 2 9 2h6c1.4 0 2.1 0 2.635.272a2.5 2.5 0 0 1 1.092 1.093C19 3.9 19 4.6 19 6v13.208c0 1.056 0 1.583-.217 1.856a1 1 0 0 1-.778.378c-.349.002-.764-.324-1.593-.976L12 17l-4.411 3.466c-.83.652-1.245.978-1.594.976a1 1 0 0 1-.778-.378C5 20.791 5 20.264 5 19.208V6z"
-              fill="#000000"
-            />
-          </svg>
-        </button>
-        <h2 class="card__question" aria-label="Question">
-          What is the name of Thor's enchanted hammer?
-        </h2>
-        <p class="card__answer" aria-label="Answer">Mjolnir</p>
-        <button class="card__button card__button--hide">Hide answer</button>
-        <ul class="card__tag-container" aria-label="Topics">
-          <li class="card__tag">Marvel</li>
-          <li class="card__tag">Thor</li>
-          <li class="card__tag">Weapons</li>
-        </ul>
-      </section>
     </main>
-
-    <!-- ------------------Footer------------------ -->
     <footer>
       <nav class="navbar">
         <!-- home -->
 
-        <a
-          href="./index.html"
-          class="navlink navlink--active"
-          role="link"
-          aria-label="Home"
-        >
+        <a href="./index.html" class="navlink" role="link" aria-label="Home">
           <svg
             width="24"
             height="24"
@@ -243,7 +136,7 @@
 
         <a
           href="./add-new.html"
-          class="navlink"
+          class="navlink navlink--active"
           role="link"
           aria-label="Add new Question"
         >
