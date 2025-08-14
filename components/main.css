@@ -11,6 +11,11 @@ body {
   color: var(--dark);
 }
 
+body.dark {
+  background-color: var(--body-background-dark);
+  color: var(--light);
+}
+
 main {
   padding: 96px 24px 64px;
 }

@@ -7,10 +7,14 @@ header {
 .topbar {
   display: flex;
   justify-content: center;
-  background-color: var(--topbar-background);
+  background-color: var(--light);
   padding: var(--space-sm);
   margin-bottom: var(--space-md);
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.dark .topbar {
+  background-color: var(--primary-darker);
 }
 
 .topbar h1.logo {
@@ -19,4 +23,8 @@ header {
   font-family: "Syncopate", sans-serif;
   font-weight: 700;
   color: var(--primary-color);
+}
+
+.dark .topbar h1.logo {
+  color: var(--light);
 }

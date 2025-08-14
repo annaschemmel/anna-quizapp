@@ -10,24 +10,14 @@
   --border-radius-lg: 10px;
 
   --body-background: #e2e9f9;
+  --body-background-dark: #13172a;
 
   --primary-color: #006ef2;
   --primary-lighter: color-mix(in oklab, var(--primary-color), white 65%);
+  --primary-darker: color-mix(in oklab, var(--primary-color), black 60%);
+
   --secondary-color: #ff5c00;
   --tertiary-color: #eaeaea;
-  --dark: #202236;
+  --dark: #1e2441;
   --light: #fff;
-
-  /*_____________Topbar________________*/
-
-  --topbar-background: #fff;
-
-  /*____________Navigation_____________*/
-
-  --navbar-background: ;
-  --navbar-background-active: ;
-
-  /*______________Cards______________*/
-
-  --card-background: #fff;
 }

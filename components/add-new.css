@@ -18,7 +18,7 @@
 
 .add-new__form input,
 .add-new__form textarea {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-lighter);
   border: none;
