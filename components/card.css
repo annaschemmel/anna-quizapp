@@ -57,9 +57,9 @@
   color: var(--secondary-color);
   text-align: center;
 }
-/* .card__answer--hidden {
+.card__answer--hidden {
   display: none;
-} */
+}
 
 /* _______________________Button_______________________ */
 

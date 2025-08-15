@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./theme.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <script src="./JS/card.js" type="module"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +29,7 @@
           class="card__bookmark card__bookmark-active"
           aria-pressed="true"
           aria-label="Bookmark"
+          data-js="bookmark"
         >
           <svg
             width="36"
@@ -46,10 +48,10 @@
           What is the name of the first Marvel Cinematic Universe film, released
           in 2008?
         </h2>
-        <p class="card__answer card__answer--hidden" hidden aria-label="Answer">
+        <p class="card__answer" hidden aria-label="Answer" data-js="quizAnswer">
           Iron Man
         </p>
-        <button class="card__button">Show answer</button>
+        <button class="card__button" data-js="answerButton">Show answer</button>
         <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">MCU</li>
@@ -80,10 +82,10 @@
         <h2 class="card__question" aria-label="Question">
           What is the real name of the superhero known as Iron Man?
         </h2>
-        <p class="card__answer card__answer--hidden" hidden aria-label="Answer">
+        <p class="card__answer" hidden aria-label="Answer" data-js="quizAnswer">
           Tony Stark
         </p>
-        <button class="card__button">Show answer</button>
+        <button class="card__button" data-js="answerButton">Show answer</button>
         <ul class="card__tag-container" aria-label="Topics">
           <li class="card__tag">Marvel</li>
           <li class="card__tag">Iron Man</li>
